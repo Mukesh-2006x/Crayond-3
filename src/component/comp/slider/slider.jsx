@@ -1,8 +1,8 @@
-// SliderComponent.js
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import Typography from '@mui/material/Typography';
+import { useTheme } from '@emotion/react';
 
 const marks = [
   { value: 10, label: 'Poor' },
@@ -38,14 +38,12 @@ const sliderStyles = {
   },
 };
 
-const CustomSlider = () => {
-  const [currentValue, setCurrentValue] = React.useState(70);
-
-  const handleSliderChange = (event, newValue) => {
-    setCurrentValue(newValue);
-  };
-
+const CustomSlider = ({ currentValue, onChange }) => {
   const currentLabel = marks.find(mark => mark.value === currentValue)?.label || '';
+  const theme = useTheme();
+  const handleSliderChange = (event, newValue) => {
+    onChange(newValue);
+  };
 
   return (
     <Box sx={{ width: 400, textAlign: 'center' }}>
