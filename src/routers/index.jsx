@@ -1,6 +1,6 @@
 import {BrowserRouter , Route, Routes } from "react-router-dom"
 import { Contact, Home } from "../screens"
-import { Layout } from "../component"
+import { Layout } from "../components"
 import { Router } from "./routers"
 
 

@@ -1,7 +1,7 @@
 // home.jsx
 import React, { useState } from 'react';
-import CustomSlider from '../component/comp/slider/slider';
-import Checkboxes from '../component/comp/checkbox/checkbox';
+import CustomSlider from '../components/slider/slider';
+import Checkboxes from '../components/checkbox/checkbox';
 import { useTheme } from '@mui/material/styles';
 import lightTheme from '../theams/lighttheam'; 
 import darkTheme from '../theams/darktheam'; 
