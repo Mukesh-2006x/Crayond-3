@@ -1,4 +1,7 @@
 export const Router  = {
     Signin : "/",
-    Signup: "/Signin"
+    Signup: "/Signup",
+    Login: "/Login",
+    Forgetpass: "/Forgetpass",
+    Resetpass: "/Resetpass"
 }

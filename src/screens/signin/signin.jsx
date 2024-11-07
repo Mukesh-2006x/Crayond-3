@@ -77,14 +77,14 @@ const Signin = () =>  {
                             </Button>
 
                             <Divider sx={{ my: 2 ,paddingBottom:'20px',marginLeft:'60px',marginRight:'60px' ,color:'#71707E',fontSize:'12px'}}>or</Divider>
-
+                            <p style={{fontSize:'12px',paddingBottom:'8px',paddingTop:'3px',display:'flex'}}>Work Email<p style={{color:'red'}}>*</p></p>
                             <TextField
-    label="Work Email"
+    
     type="email"
     fullWidth
     required
     variant="outlined"
-    defaultValue="atomicsignals@gmail.com"
+  
     sx={{ mb: 2 }}
     InputProps={{
         sx: { height: '40px' }, 
@@ -93,7 +93,7 @@ const Signin = () =>  {
 
 
                             <Button
-                                variant="contained"
+                                variant="contained" href="/signup"
                                
                                 fullWidth
                                 sx={{
@@ -102,6 +102,7 @@ const Signin = () =>  {
                                     backgroundColor: '#49C792',
                                     padding: '6px',
                                     boxShadow:'none'
+                                    
                                 }}
                             >
                                 Sign up
