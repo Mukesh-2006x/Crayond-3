@@ -7,7 +7,7 @@ import GoogleIC from '../../assets/google.png';
 import Logo from '../../assets/logo.png';
 import Outlook from '../../assets/outlook.png';
 
-export function SignUp() {
+const Signin = () =>  {
     const [isOpen, setIsOpen] = useState(true);
 
     return (
@@ -87,7 +87,7 @@ export function SignUp() {
     defaultValue="atomicsignals@gmail.com"
     sx={{ mb: 2 }}
     InputProps={{
-        sx: { height: '40px' }, // Adjust height here
+        sx: { height: '40px' }, 
     }}
 />
 
@@ -122,3 +122,4 @@ export function SignUp() {
         </div>
     );
 }
+export default Signin;

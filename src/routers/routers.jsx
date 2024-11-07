@@ -1,4 +1,4 @@
 export const Router  = {
-    Home : "/",
-    Contact: "/contact"
+    Signin : "/",
+    Signup: "/Signin"
 }

@@ -1,5 +1,6 @@
 import {BrowserRouter , Route, Routes } from "react-router-dom"
-import { Contact, Home } from "../screens"
+import  Signup  from '../screens/signup/signup'
+import Signin from '../screens/signin/signin'
 import { Layout } from "../components"
 import { Router } from "./routers"
 
@@ -8,10 +9,10 @@ export function AppRouter(){
     return(
         <BrowserRouter>
         <Routes>
-        <Route path={Router.Home} element={<Layout/>}>
-            <Route index element={<Home/>}/>
-            <Route path={Router.Contact} element={<Contact/>}/>
-        </Route>
+      
+            <Route index element={<Signin/>}/>
+            <Route path={Router.Signup} element={<Signup/>}/>
+       
         </Routes>
         </BrowserRouter>
     )
